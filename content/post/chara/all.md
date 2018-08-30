@@ -2,7 +2,6 @@
 title: "Character"
 date: 2018-08-30T17:48:52+09:00
 sidebar : true
-weight: 1
 ---
 ### キャラ一覧 ###
 [遊糸]({{< ref "youmi.md" >}})
