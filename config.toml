@@ -3,6 +3,6 @@ languageCode = "jp"
 title = "煌史伝"
 theme = 'lanyon-hugo'
 [Params]
-  Title = "煌史"
+  Title = "煌史伝"
   Tagline = "きりの創作「煌史」の作品、キャラ紹介サイト"
   Author= "きり"
