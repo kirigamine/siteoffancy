@@ -1,0 +1,27 @@
+{
+    "contentdir": "content",
+    "layoutdir": "layouts",
+    "publishdir": "public",
+
+    "builddrafts": false,
+
+    "baseurl": "http://tummychow.github.io/lanyon-hugo/",
+    "canonifyurls": true,
+    "permalinks": {
+        "post": ":year/:month/:day/:title/",
+        "fixed": ":title/"
+    },
+
+    "pygmentsuseclasses": true,
+
+    "params": {
+        "Title": "煌史",
+        "Tagline": "きりの創作「煌史」の作品、キャラ紹介サイト",
+        "Author": "きり",
+        "DateForm": "Jan 2 2006",
+        "Github": {
+            "Url": "http://github.com/kirigamine/siteoffancy",
+            "Head": "master"
+        }
+    }
+}
