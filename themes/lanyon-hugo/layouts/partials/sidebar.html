@@ -17,7 +17,8 @@
         <a class="sidebar-nav-item {{ if eq .Permalink $thisperma }} active {{ end }}" href="{{ .Permalink }}">{{ .Title }}</a>
       {{ end }}
     {{ end }}
-    <a class="sidebar-nav-item {{ if eq .URL "/post/" }} active {{ end }}" href="/post">Posts</a>
+    <a class="sidebar-nav-item {{ if eq .URL "/" }} active {{ end }}" href="/categories/story/">Story</a>
+        <a class="sidebar-nav-item {{ if eq .URL "/post/" }} active {{ end }}" href="/post">All Posts</a>
   </nav>
 
   <div class="sidebar-item">
