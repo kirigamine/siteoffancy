@@ -4,7 +4,14 @@
 
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-
+  <!-- Twitter Card Metas -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="og:title" content="{{ .Title }}" />
+    <meta name="og:description" content="{{ if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+    <meta name="og:image" content="{{ .Site.BaseURL }}{{ .Params.youmi }}" />
+    <meta name="twitter:url" content="{{ .Permalink }}" />
+    <meta name="twitter:site" content="@kirifoggy" />
+    <meta name="twitter:creator" content="@kirifoggy" />
   <title>
     {{ if eq .URL "/" }}
       {{ .Site.Params.Title }} &middot; {{ .Site.Params.Tagline }}
