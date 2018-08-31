@@ -2,6 +2,7 @@ baseURL = "https://fancy-huangshi.netlify.com"
 languageCode = "jp"
 title = "煌史伝"
 theme = 'lanyon-hugo'
+image= "https://i.imgur.com/czjgYJM.png"
 [Params]
   Title = "煌史伝"
   Tagline = "きりの創作「煌史」の作品、キャラ紹介サイト"
