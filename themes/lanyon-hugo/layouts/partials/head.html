@@ -5,13 +5,31 @@
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <!-- Twitter Card Metas -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="{{ .Site.Params.Twitter }}">
-  <meta name="twitter:creator" content="{{ .Site.Params.Twitter }}">
-  <meta name="twitter:title" content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}">
-  <meta name="twitter:url" content="{{ .Permalink }}">
-  <meta name="twitter:image" content="https://i.imgur.com/czjgYJM.png">
-  <meta name="twitter:description" content="{{if .IsPage}}{{ .Summary }}{{else}}{{.Site.Params.Description}}{{end}}">
+
+  <!-- og property -->
+    <meta property="og:title" content="{{ if eq .URL "/" }}<title>{{ .Site.Title }}</title>{{ else }}<title>{{ .Title }}&nbsp;-&nbsp;{{ .Site.Title }}</title>{{ end }}"></meta>
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <!-- og description -->
+    <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <!-- og images -->
+    {{ if eq .URL "/" }}
+    <meta property="og:image" content="{{ .Site.BaseURL }}img/mwlogoicon.png">
+    {{ else }}
+    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.eyecatch }}">
+    {{ end }}
+    <!-- Twitter Card Summary with large image -->
+    <meta name="twitter:card" content="summary_large_image" /></meta>
+    <meta name="twitter:site" content="{{ .Site.Params.twitter }}"></meta>
+    <meta name="twitter:creator" content="{{ .Site.Params.twitter }}"></meta>
+    <meta name="twitter:title" content="{{ if eq .URL "/" }}<title>{{ .Site.Title }}</title>{{ else }}<title>{{ .Title }}&nbsp;-&nbsp;{{ .Site.Title }}</title>{{ end }}"></meta>
+    <meta name="twitter:url" content="{{ .Permalink }}"></meta>
+    <meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}"></meta>
+    <meta name="twitter:image" content="https://i.imgur.com/czjgYJM.png">
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.eyecatch }}"></meta>
+
 
   <title>
     {{ if eq .URL "/" }}
