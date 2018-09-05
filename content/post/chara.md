@@ -24,7 +24,9 @@ sidebar : true
 
 蓮のような文様を右目にあしらわれていており、何かが"封印"されているらしい。
 
-![Imgur](https://i.imgur.com/EySF3ls.jpg)
+下図の右側は[真景]({{< ref "term.md#真景" >}})である。
+
+![Imgur](https://i.imgur.com/49j9eTF.png)
 
 
 ### 桃花 ###
@@ -45,3 +47,8 @@ sidebar : true
 自身のことを誇りに思っていて、[遊糸](#遊糸)をよくコケにすることもある。
 
 相手を乗っ取る毒を体液を通じて用いることが出来、使うときは片目が光る。
+
+下図の右側は[真景]({{< ref "term.md#真景" >}})である。
+
+
+![Imgur](https://i.imgur.com/yHaHchM.png)
